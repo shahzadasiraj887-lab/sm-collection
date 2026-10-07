@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SM Collection | Premium Perfumes</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f7f3ee;color:#222}
+header{background:#111;color:#fff;text-align:center;padding:28px 16px}
+.logo{font-size:34px;font-weight:800;letter-spacing:3px}.tag{color:#d8b46a;margin-top:8px}
+.hero{padding:30px 18px;text-align:center;background:linear-gradient(135deg,#191919,#4b3a22);color:white}
+.hero h1{font-size:32px;margin:5px}.hero p{opacity:.9}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;padding:20px;max-width:900px;margin:auto}
+.card{background:#fff;border-radius:16px;padding:18px;text-align:center;box-shadow:0 4px 16px #0001}
+.bottle{height:130px;border-radius:12px;background:linear-gradient(135deg,#222,#c99b4b);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:bold;margin-bottom:14px}
+.price{font-size:20px;font-weight:bold;margin:10px}.btn{display:inline-block;background:#198754;color:#fff;padding:11px 16px;border-radius:25px;text-decoration:none;font-weight:bold}
+footer{text-align:center;background:#111;color:#ddd;padding:24px;margin-top:20px}
+.small{font-size:13px;color:#777}
+</style>
+</head>
+<body>
+<header><div class="logo">SM COLLECTION</div><div class="tag">Premium Fragrances • Long Lasting</div></header>
+<section class="hero"><h1>Find Your Signature Scent</h1><p>Quality perfumes at an affordable price.</p></section>
+<section class="grid">
+<script>
+const perfumes=["WHITE OUD","JANAN SPORTS","JASMINE MUSK","GUCCI RUSH","ARMANI MANIA","100 SILENT WAYS","MUSK SILK","MARJ","FOGG BLACK","HAWAS ICE","MISS DIOR","FOGG PURPLE","FOGG PURPLE — LARGE"];
+const phone="923023110249";
+document.write(perfumes.map(p=>`<div class="card"><div class="bottle">${p}</div><h3>${p}</h3><div class="price">Rs. 2,000</div><a class="btn" href="https://wa.me/${phone}?text=${encodeURIComponent("Assalam o Alaikum, mujhe "+p+" perfume order karna hai.")}" target="_blank">Order on WhatsApp</a></div>`).join(""));
+</script>
+</section>
+<footer><b>SM COLLECTION</b><br>Order directly on WhatsApp<br><br>0302 3110249<br><br><span class="small">© SM Collection</span></footer>
+</body>
+</html>
